@@ -1,3 +1,1 @@
-function Script1(){
-
-}
+global.tiros = 0;

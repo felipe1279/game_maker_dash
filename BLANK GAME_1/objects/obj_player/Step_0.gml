@@ -23,7 +23,7 @@ if keyboard_check(ord("A"))
 
 if keyboard_check(ord("A")) and keyboard_check(ord("F")) and cooldown = 0
 {
-	x -= 60;
+	x -= 120;
 	cooldown = 480;
 }
 
@@ -34,7 +34,7 @@ if cooldown > 0 {
 
 if keyboard_check(ord("D")) and keyboard_check(ord("F")) and cooldown = 0
 {
-	x += 60;
+	x += 120;
 	cooldown = 480;
 }
 if cooldown > 0 {
@@ -44,7 +44,7 @@ if cooldown > 0 {
 
 if keyboard_check(ord("W")) and keyboard_check(ord("F")) and cooldown = 0
 {
-	y -= 60;
+	y -= 100;
 	cooldown = 480;
 }
 if cooldown > 0 {
@@ -55,10 +55,12 @@ if cooldown > 0 {
 
 if keyboard_check(ord("S")) and keyboard_check(ord("F")) and cooldown = 0
 {
-	y += 60;
+	y += 100;
 	cooldown = 480;
 }
 if cooldown > 0 {
 	cooldown -= 1
  
 }
+
+global.tiros = obj_player.x
